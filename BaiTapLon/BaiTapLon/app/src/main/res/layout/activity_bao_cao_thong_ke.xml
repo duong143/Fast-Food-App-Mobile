@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaoCaoThongKe">
+
+    <!-- Nút quay lại ở góc trên bên trái -->
+    <ImageButton
+        android:id="@+id/quaylaibctk"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Quay lại"
+        android:src="@drawable/quaylai"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/thongke"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Báo cáo thống kê"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quaylaibctk" /> <!-- Đặt TextView dưới ImageButton -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/background_light"
+        android:padding="0dp">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fitsSystemWindows="true"
+            app:title="@null"/>
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:src="@drawable/banner"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Món Mới "
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:src="@drawable/burger1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Burger Bò phô mai"
+                        android:textAlignment="center"
+                        android:textSize="15dp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Món Hot"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:src="@drawable/canhga"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cánh Gà Nugget"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ComBo Đặc Biệt"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:src="@drawable/combo1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2 Gà + 2 Burger + 2 Nước Ngọt"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"/>
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/btntrainghiemngay"
+                    android:text=" Click Để Trải Nghiệm "/>
+
+
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:padding="0dp"
+        app:headerLayout="@layout/header_menu_draw"
+        app:menu="@menu/menu_main"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

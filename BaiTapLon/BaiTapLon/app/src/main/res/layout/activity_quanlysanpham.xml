@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <ImageButton
+        android:id="@+id/quaylaiqlsp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Quay lại"
+        android:src="@drawable/quaylai" />
+    <EditText
+        android:id="@+id/tenspadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên sản phẩm" />
+
+    <EditText
+        android:id="@+id/edtgiaspadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giá sản phẩm"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/soluongspadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số lượng"
+        android:inputType="number" />
+
+    <ImageView
+        android:id="@+id/anhadmin"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:contentDescription="Product Image"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnchonhinhanhadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chọn Hình Ảnh"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnthemadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm " />
+
+    <Button
+        android:id="@+id/btnxoaadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xóa" />
+
+    <Button
+        android:id="@+id/btnxemspadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem danh sách sản phẩm" />
+</LinearLayout>

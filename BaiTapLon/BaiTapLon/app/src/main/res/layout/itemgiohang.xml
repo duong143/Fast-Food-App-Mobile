@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/anhgh"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tengh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên sản phẩm" />
+
+        <TextView
+            android:id="@+id/giagh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá" />
+
+        <TextView
+            android:id="@+id/soluonggh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lượng" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/btnconggh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Tăng số lượng"
+                android:src="@drawable/cong"
+                android:layout_marginEnd="4dp"/>
+
+
+            <ImageButton
+                android:id="@+id/btntrugh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Giảm số lượng"
+                android:src="@drawable/tru"
+                android:layout_marginEnd="4dp"/>
+
+
+            <ImageButton
+                android:id="@+id/btnxoagh"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Xóa sản phẩm"
+                android:src="@drawable/xoa" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

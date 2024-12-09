@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Nút quay lại -->
+        <ImageButton
+            android:id="@+id/quaylaittlh"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Quay lại"
+            android:src="@drawable/quaylai"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Header Section with Logo and Company Name -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/headerCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintTop_toBottomOf="@id/quaylaittlh">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/logodasua"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Food And Furious"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/design_default_color_primary" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Description Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/descriptionCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintTop_toBottomOf="@id/headerCard">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Nhanh tay thưởng thức hương vị tuyệt vời, nóng hổi giòn tan – Đồ ăn nhanh, tiện lợi, đậm chất ngon!"
+                android:textSize="16sp"
+                android:textColor="@color/material_on_surface_emphasis_medium"
+                android:lineSpacingMultiplier="1.2" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Contact Information Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/contactCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintTop_toBottomOf="@id/descriptionCard">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Liên hệ"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/design_default_color_primary"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Phone -->
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0347370975"
+                    app:icon="@drawable/phone"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:gravity="start|center_vertical"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Address 1 -->
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trường Đại Học Công Nghệ Đông Á"
+                    app:icon="@drawable/map"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:gravity="start|center_vertical"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Address 2 -->
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Công Nghệ Thông Tin IT 9"
+                    app:icon="@drawable/map"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:gravity="start|center_vertical"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Email -->
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nhkpx57@gmail.com"
+                    app:icon="@drawable/baseline_mail_24"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:gravity="start|center_vertical" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Map Image -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintTop_toBottomOf="@id/contactCard"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/maptruong"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

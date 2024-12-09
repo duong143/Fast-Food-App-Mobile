@@ -1,0 +1,88 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F9F9F9">
+    <ImageButton
+        android:id="@+id/quaylaittgh"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Quay lại"
+        android:src="@drawable/quaylai"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin giỏ hàng"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:textColor="#333333" />
+
+
+    <TextView
+        android:id="@+id/thongtingiohang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin giỏ hàng sẽ hiển thị ở đây"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:paddingBottom="16dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập địa chỉ giao hàng:"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:paddingBottom="8dp" />
+
+    <EditText
+        android:id="@+id/diachi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập địa chỉ"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập số điện thoại:"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:paddingBottom="8dp" />
+
+    <EditText
+        android:id="@+id/sodienthoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số điện thoại"
+        android:inputType="phone"
+        android:padding="12dp"
+
+        android:layout_marginBottom="16dp"/>
+
+
+    <Button
+        android:id="@+id/btnxacnhandathang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xác Nhận Đặt Hàng"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

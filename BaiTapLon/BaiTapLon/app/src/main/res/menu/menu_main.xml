@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/trangchu"
+    android:title="Trang chủ"
+    android:icon="@drawable/trangchu"/>
+    <item
+        android:id="@+id/sanpham"
+        android:title="Sản Phẩm"
+        android:icon="@drawable/sanpham"/>
+    <item
+        android:id="@+id/giohang"
+        android:title="Giỏ Hàng"
+        android:icon="@drawable/giohang"/>
+    <item
+        android:id="@+id/donhang"
+        android:title="Hóa Đơn"
+        android:icon="@drawable/donhang"/>
+    <item
+        android:id="@+id/thongtinlienhe"
+        android:title="Thông Tin liên Hệ"
+        android:icon="@drawable/thongtinlienhe"/>
+    <item
+        android:id="@+id/adimin"
+        android:title="Admin"
+        android:icon="@drawable/khoa"/>
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Hẹn Gặp lại bạn :3">
+            <menu>
+                <item
+                    android:id="@+id/thoat"
+                    android:title="Thoát"
+                    android:icon="@drawable/thoat"/>
+            </menu>
+        </item>
+    </group>
+</menu>
